@@ -1,0 +1,11 @@
+export default {
+  COLORS: {
+    PRIMARY_100: "#5FB4A2",
+    PRIMARY_200: "#203A4C",
+    PRIMARY_300: "#33323D",
+
+    SECONDARY_100: "#FAFAFA",
+    SECONDARY_200: "#EAEAEB",
+    SECONDARY_300: "#F43030",
+  },
+};
