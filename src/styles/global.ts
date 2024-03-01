@@ -16,4 +16,13 @@ export default createGlobalStyle`
     font-family: "Inter", sans-serif;
   }
 
+  button {
+    border: none;
+    background-color: transparent;
+  }
+
+  a{ 
+    text-decoration: none;
+  }
+
 `;
