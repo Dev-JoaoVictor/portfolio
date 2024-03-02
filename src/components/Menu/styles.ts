@@ -14,6 +14,7 @@ export const Container = styled.div<{ $isOpen: boolean }>`
     width: 100%;
     padding: 0 3.2rem;
     height: calc(100vh - 8rem);
+    background-color: ${({ theme }) => theme.COLORS.SECONDARY_100};
   }
 
   li {
