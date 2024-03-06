@@ -2,24 +2,27 @@ import styled from "styled-components";
 
 export const Container = styled.main`
   height: 100vh;
-  padding: 0 2.2rem;
 `;
 
 export const Content = styled.div`
-  margin-top: 8rem;
   display: flex;
+  gap: 8rem;
   flex-direction: column;
+  padding: 0 2.2rem;
+
+  position: relative;
+
+  margin: 5rem 0;
 `;
 
-export const Presetation = styled.section`
-  img {
-    width: 100%;
-  }
+export const Presentation = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 
   h1 {
     font-size: 2.6rem;
-    text-align: center;
-    margin-bottom: 1.8rem;
     color: ${({ theme }) => theme.COLORS.PRIMARY_200};
   }
 
@@ -27,16 +30,28 @@ export const Presetation = styled.section`
     text-align: center;
     font-size: 1.8rem;
     line-height: 2.4rem;
-    color: ${({ theme }) => theme.COLORS.PRIMARY_300};
+    color: ${({ theme }) => theme.COLORS.PRIMARY_200};
     font-weight: 500;
   }
+`;
 
-  animation: slide-right 500ms backwards;
+export const Link = styled.a`
+  gap: 2rem;
+  display: flex;
+  align-items: center;
 
-  @keyframes slide-right {
-    0% {
-      transform: translateX(-100px);
-      opacity: 0;
-    }
-  }
+  font-weight: 500;
+  font-size: 1.8rem;
+
+  padding: 1.8rem;
+  border-radius: 0.6rem;
+
+  color: white;
+  background-color: ${({ theme }) => theme.COLORS.PRIMARY_200};
+`;
+
+export const Button = styled.a`
+  position: fixed;
+  bottom: 0;
+  right: 0;
 `;
