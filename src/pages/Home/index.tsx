@@ -1,4 +1,4 @@
-import { Container, Content, Link, Presentation } from "./styles";
+import { Container, Content, Presentation } from "./styles";
 
 import bannerHome from '../../assets/banner-home.svg'
 import bannerServices from '../../assets/banner-services.svg'

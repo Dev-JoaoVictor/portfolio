@@ -34,24 +34,3 @@ export const Presentation = styled.section`
     font-weight: 500;
   }
 `;
-
-export const Link = styled.a`
-  gap: 2rem;
-  display: flex;
-  align-items: center;
-
-  font-weight: 500;
-  font-size: 1.8rem;
-
-  padding: 1.8rem;
-  border-radius: 0.6rem;
-
-  color: white;
-  background-color: ${({ theme }) => theme.COLORS.PRIMARY_200};
-`;
-
-export const Button = styled.a`
-  position: fixed;
-  bottom: 0;
-  right: 0;
-`;
