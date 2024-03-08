@@ -1,39 +1,38 @@
-import { Container, Content, Presentation } from "./styles";
+import { Container, Content, Presentation, Section } from "./styles";
 
-import bannerHome from '../../assets/banner-home.svg'
-import bannerServices from '../../assets/banner-services.svg'
+import bannerHome from '../../assets/images/banner-home.svg';
+import bannerServices from '../../assets/images/banner-services.svg'
 
-import { Header } from "../../components/Header";
-import { Section } from "../../components/Section";
-import { Carousel } from "../../components/Carousel";
 import { Footer } from "../../components/Footer";
-
+import { Header } from "../../components/Header";
+import { Projects } from "../../components/Projects";
+import { Contact } from "../../components/Contact";
 
 export function Home() {
   return (
     <Container>
       <Header />
       <Content>
-        <Presentation id="init">
+        <Presentation >
           <img src={bannerHome} alt="" />
-          <h1>Olá, Seja bem-vindo(a)!</h1>
-          <p> Me chamo João e fique a vontade para explorar todo conteúdo do site!</p>
+          <h1>Olá, Seja bem vindo</h1>
+          <p>Eu sou o João, fique a vontade para explorar o conteúdo do site.</p>
         </Presentation>
-        <section id="project">
-          <Carousel />
-        </section>
+        <Section>
+          <div>
+            <Projects />
+          </div>
+        </Section>
         <Section>
           <img src={bannerServices} alt="" />
-          <h2>Serviços Personlizados</h2>
           <ul>
             <li>Website</li>
             <li>Portfolio</li>
             <li>Landing Page</li>
           </ul>
-          <p>
-            Com minha experiência posso transformar suas ideias em realidade digital, seja para projetos pessoais ou comerciais.
-          </p>
+          <p>Com minha experiência posso transformar sua ideias em realidade digital, seja para projetos pessoais ou comerciais, soluções personalizadas que atendam às suas necessidades e impulsionem projeto. </p>
         </Section>
+        <Contact />
       </Content>
       <Footer />
     </Container>

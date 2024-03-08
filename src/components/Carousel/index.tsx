@@ -1,34 +1,20 @@
-import { Container, Content } from "./styles"
+import { Swiper } from "swiper/react"
+import { Pagination } from "swiper/modules";
 
-export function Carousel() {
+interface CoruselProps {
+  children: React.ReactNode;
+  slidesPerView: number
+}
+
+export function Carousel({ children, slidesPerView }: CoruselProps) {
   return (
-    <Container
-      slidesPerView={1}
+    <Swiper
+      modules={[Pagination]}
+      slidesPerView={slidesPerView}
       spaceBetween={10}
-      pagination={{ clickable: true }}
+      pagination
     >
-      <Content>
-        <a href="">
-          <div></div>
-        </a>
-        <h2>Titulo do Projeto</h2>
-        <p>Breve descrição do projeto.</p>
-      </Content>
-      <Content>
-        <a href="">
-          <div></div>
-        </a>
-        <h2>Titulo do Projeto</h2>
-        <p>Breve descrição do projeto.</p>
-      </Content>
-      <Content>
-        <a href="">
-          <div></div>
-        </a>
-        <h2>Titulo do Projeto</h2>
-        <p>Breve descrição do projeto.</p>
-      </Content>
-    </Container>
-
+      {children}
+    </Swiper >
   )
 }

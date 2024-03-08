@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/icons/logo.svg'
 
 import { Menu } from "../Menu";
 
