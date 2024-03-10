@@ -17,8 +17,8 @@ export function Menu() {
           {menuOpen ? <FiX /> : <FiMenu />}
         </Button>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Portfolio</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/portifolio">Portfolio</a></li>
           <li><a href="#">Contato</a></li>
         </ul>
       </nav>

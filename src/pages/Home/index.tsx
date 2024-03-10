@@ -5,8 +5,8 @@ import bannerServices from '../../assets/images/banner-services.svg'
 
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
-import { Projects } from "../../components/Projects";
 import { Contact } from "../../components/Contact";
+import { ProjectCarousel } from "../../components/ProjectCarousel";
 
 export function Home() {
   return (
@@ -20,20 +20,21 @@ export function Home() {
         </Presentation>
         <Section>
           <div>
-            <Projects />
+            <ProjectCarousel />
           </div>
         </Section>
         <Section>
           <img src={bannerServices} alt="" />
+          <h2>Serviços Personalizados</h2>
           <ul>
             <li>Website</li>
             <li>Portfolio</li>
             <li>Landing Page</li>
           </ul>
-          <p>Com minha experiência posso transformar sua ideias em realidade digital, seja para projetos pessoais ou comerciais, soluções personalizadas que atendam às suas necessidades e impulsionem projeto. </p>
+          <p>Com minha experiência posso transformar suas ideias em realidade digital, seja para projetos pessoais ou comerciais, soluções personalizadas que atendam às suas necessidades e impulsionem o seu projeto.</p>
         </Section>
-        <Contact />
       </Content>
+      <Contact />
       <Footer />
     </Container>
   )

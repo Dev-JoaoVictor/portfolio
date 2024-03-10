@@ -6,11 +6,12 @@ export const Container = styled.section`
   gap: 4rem;
   flex-direction: column;
 
-  padding: 1.6rem;
   border-radius: 0.8rem;
 
+  padding: 2.4rem;
+
   p {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     text-align: center;
     font-weight: 400;
   }

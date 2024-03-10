@@ -10,8 +10,6 @@ export const Content = styled.div`
   flex-direction: column;
   padding: 0 2.2rem;
 
-  position: relative;
-
   margin: 5rem 0;
 `;
 
@@ -39,8 +37,8 @@ export const Section = styled.section`
 
   > h2 {
     font-size: 2.4rem;
+    text-align: center;
     color: ${({ theme }) => theme.COLORS.PRIMARY_200};
-    border-bottom: 1px solid ${({ theme }) => theme.COLORS.PRIMARY_200};
   }
 
   ul {
@@ -51,6 +49,7 @@ export const Section = styled.section`
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: bold;
+    color: ${({ theme }) => theme.COLORS.PRIMARY_100};
   }
 
   > p {
@@ -58,4 +57,3 @@ export const Section = styled.section`
     text-align: justify;
   }
 `;
-

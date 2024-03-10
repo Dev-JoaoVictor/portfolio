@@ -1,7 +1,7 @@
 import { Carousel } from "../Carousel";
 import { Content } from "./styles";
 
-export function Projects() {
+export function ProjectCarousel() {
   return (
     <Carousel slidesPerView={1}>
       <Content>
