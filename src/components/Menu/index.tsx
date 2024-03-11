@@ -1,6 +1,7 @@
 import { FiMenu, FiX } from "react-icons/fi";
 import { Container, Button } from "./styles";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function Menu() {
 
@@ -17,9 +18,9 @@ export function Menu() {
           {menuOpen ? <FiX /> : <FiMenu />}
         </Button>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/portifolio">Portfolio</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/portfolio">Portfolio</Link></li>
+          <li><Link to="#">Contato</Link></li>
         </ul>
       </nav>
     </Container>

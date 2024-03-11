@@ -18,7 +18,6 @@ export const Container = styled.div<{ $isOpen: boolean }>`
   }
 
   li {
-    color: black;
     padding: 2.4rem 0;
     font-size: 1.8rem;
     border-bottom: 1px solid ${({ theme }) => theme.COLORS.PRIMARY_300};
