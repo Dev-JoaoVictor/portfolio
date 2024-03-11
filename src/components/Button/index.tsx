@@ -1,12 +1,14 @@
 import { Container } from "./styles";
 
 interface ButtonProps {
-  text: string
+  text: string,
+  require: string;
+  onClick?: () => void;
 }
 
-export function Button({ text }: ButtonProps) {
+export function Button({ text, require, onClick }: ButtonProps) {
   return (
-    <Container to="#">
+    <Container to={require} onClick={onClick}>
       {text}
     </Container>
   )

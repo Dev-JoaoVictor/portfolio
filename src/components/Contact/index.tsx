@@ -5,7 +5,7 @@ export function Contact() {
   return (
     <Container>
       <p>Ficou interessado em construir um projeto juntos ?</p>
-      <Button text="contate-me" />
+      <Button require="/contact" text="contate-me" />
     </Container >
   )
 }

@@ -3,17 +3,17 @@ import { Header } from "../../components/Header"
 import { Contact } from "../../components/Contact"
 import { Project } from "../../components/Project"
 
-import { Container, Content } from "./styles"
+import { Content } from "./styles"
 
 export function Portfolio() {
   return (
-    <Container>
+    <main>
       <Header />
       <Content>
         <Project />
       </Content>
       <Contact />
       <Footer />
-    </Container>
+    </main>
   )
 }

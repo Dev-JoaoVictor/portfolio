@@ -1,4 +1,4 @@
-import { Container, Content, Presentation, Section } from "./styles";
+import { Content, Presentation, Section } from "./styles";
 
 import bannerHome from '../../assets/images/banner-home.svg';
 import bannerServices from '../../assets/images/banner-services.svg'
@@ -10,7 +10,7 @@ import { ProjectCarousel } from "../../components/ProjectCarousel";
 
 export function Home() {
   return (
-    <Container>
+    <main>
       <Header />
       <Content>
         <Presentation >
@@ -36,6 +36,6 @@ export function Home() {
       </Content>
       <Contact />
       <Footer />
-    </Container>
+    </main>
   )
 }
