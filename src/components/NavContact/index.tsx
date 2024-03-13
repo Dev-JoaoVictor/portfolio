@@ -1,7 +1,7 @@
 import { Button } from "../Button";
 import { Container } from "./style";
 
-export function Contact() {
+export function NavContact() {
   return (
     <Container>
       <p>Ficou interessado em construir um projeto juntos ?</p>

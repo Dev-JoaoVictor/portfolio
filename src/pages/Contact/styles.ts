@@ -41,7 +41,7 @@ export const Form = styled.form`
   gap: 2.4rem;
   margin-top: 3.2rem;
 
-  a {
+  > a {
     width: 20rem;
     background-color: ${({ theme }) => theme.COLORS.PRIMARY_200};
     color: white;

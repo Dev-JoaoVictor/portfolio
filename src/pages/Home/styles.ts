@@ -22,6 +22,7 @@ export const Presentation = styled.section`
 
   p {
     font-size: 1.8rem;
+    line-height: 2.5rem;
     color: ${({ theme }) => theme.COLORS.PRIMARY_200};
   }
 `;
@@ -51,5 +52,11 @@ export const Section = styled.section`
   > p {
     font-size: 1.6rem;
     text-align: justify;
+  }
+
+  > a {
+    width: 100%;
+    background-color: ${({ theme }) => theme.COLORS.PRIMARY_200};
+    color: ${({ theme }) => theme.COLORS.SECONDARY_100};
   }
 `;
