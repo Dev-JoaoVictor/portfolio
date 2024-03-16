@@ -7,9 +7,8 @@ export const Content = styled(SwiperSlide)`
   gap: 0.8rem;
   flex-direction: column;
 
-  div {
-    border: 1px solid ${({ theme }) => theme.COLORS.PRIMARY_200};
-    height: 30rem;
+  img {
+    width: 100%;
   }
 
   h3 {
