@@ -15,4 +15,13 @@ export const Container = styled.section`
     text-align: center;
     font-weight: 400;
   }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {
+      font-size: 2.6rem;
+    }
+  }
 `;

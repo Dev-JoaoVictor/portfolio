@@ -3,14 +3,11 @@ import styled from "styled-components";
 export const Container = styled.footer`
   padding: 2rem;
   height: 8rem;
-  background-color: ${({ theme }) => theme.COLORS.PRIMARY_200};
-
+  border-top: 1px solid ${({theme}) => theme.COLORS.SECONDARY_200};
   display: flex;
   align-items: center;
   align-self: flex-end;
   justify-content: space-between;
-
-  color: white;
 
   > div {
     display: flex;
@@ -20,7 +17,7 @@ export const Container = styled.footer`
     font-size: 3.6rem;
     a {
       text-decoration: none;
-      color: white;
+      color: black;
     }
   }
 `;

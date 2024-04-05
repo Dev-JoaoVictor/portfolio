@@ -1,6 +1,15 @@
+import { SwiperSlide, Swiper } from "swiper/react";
+
 import styled from "styled-components";
 
-import { SwiperSlide } from "swiper/react";
+export const Container = styled(Swiper)`
+
+  width: calc(100vw - 5rem);
+
+  display: flex;
+  flex-direction: column;
+
+`;
 
 export const Content = styled(SwiperSlide)`
   display: flex;
@@ -19,5 +28,5 @@ export const Content = styled(SwiperSlide)`
     font-size: 1.6rem;
   }
 
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 `;

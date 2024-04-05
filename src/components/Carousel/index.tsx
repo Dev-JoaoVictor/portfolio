@@ -1,20 +1,44 @@
-import { Swiper } from "swiper/react"
+
 import { Pagination } from "swiper/modules";
 
+import { Link } from "react-router-dom";
+import banner from '../../assets/images/project1.jpg'
+
+import { Container, Content } from "./styles";
+
 interface CoruselProps {
-  children: React.ReactNode;
   slidesPerView: number
 }
 
-export function Carousel({ children, slidesPerView }: CoruselProps) {
+export function Carousel({ slidesPerView }: CoruselProps) {
   return (
-    <Swiper
+    <Container
       modules={[Pagination]}
       slidesPerView={slidesPerView}
       spaceBetween={10}
       pagination
     >
-      {children}
-    </Swiper >
+      <Content>
+        <Link to="/details">
+          <img src={banner} alt="" />
+        </Link>
+        <h3>Titulo do Projeto</h3>
+        <p>Descrição breve do projeto.</p>
+      </Content>
+      <Content>
+        <Link to="/details">
+          <img src={banner} alt="" />
+        </Link>
+        <h3>Titulo do Projeto</h3>
+        <p>Descrição breve do projeto.</p>
+      </Content>
+      <Content>
+        <Link to="/details">
+          <img src={banner} alt="" />
+        </Link>
+        <h3>Titulo do Projeto</h3>
+        <p>Descrição breve do projeto.</p>
+      </Content>
+    </Container >
   )
 }

@@ -15,24 +15,54 @@ export const Presentation = styled.section`
   flex-direction: column;
   text-align: center;
 
-  h1 {
-    font-size: 2.6rem;
-    color: ${({ theme }) => theme.COLORS.PRIMARY_300};
+  > div {
+    h1 {
+      font-size: 2.6rem;
+      color: ${({ theme }) => theme.COLORS.PRIMARY_300};
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      color: ${({ theme }) => theme.COLORS.PRIMARY_200};
+    }
   }
 
-  p {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-    color: ${({ theme }) => theme.COLORS.PRIMARY_200};
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: ${({ theme }) => theme.COLORS.PRIMARY_200};
+
+    img {
+      width: 35rem;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      h1 {
+        font-size: 3.2rem;
+        color: ${({ theme }) => theme.COLORS.PRIMARY_100};
+      }
+
+      p {
+        color: white;
+      }
+    }
   }
 `;
 
-export const Section = styled.section`
-  display: flex;
+export const Service = styled.section`
   gap: 1rem;
+  display: flex;
   flex-direction: column;
 
-  > h2 {
+  h2 {
     font-size: 2.4rem;
     text-align: center;
     color: ${({ theme }) => theme.COLORS.PRIMARY_200};
@@ -49,14 +79,27 @@ export const Section = styled.section`
     color: ${({ theme }) => theme.COLORS.PRIMARY_100};
   }
 
-  > p {
+  p {
     font-size: 1.6rem;
     text-align: justify;
   }
 
-  > a {
-    width: 100%;
-    background-color: ${({ theme }) => theme.COLORS.PRIMARY_200};
-    color: ${({ theme }) => theme.COLORS.SECONDARY_100};
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    ul {
+      font-size: 1.6rem;
+    }
+
+    p {
+      text-align: center;
+      font-size: 2rem;
+    }
   }
 `;
