@@ -35,12 +35,3 @@ export function Home() {
     </main>
   )
 }
-
-function useState<T>(arg0: number): [any, any] {
-  throw new Error("Function not implemented.");
-}
-
-
-function useEffect(arg0: () => () => void, arg1: never[]) {
-  throw new Error("Function not implemented.");
-}
