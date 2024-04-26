@@ -5,12 +5,35 @@ import { Link } from "react-router-dom";
 import banner from '../../assets/images/project1.jpg'
 
 import { Container, Content } from "./styles";
+import { useEffect, useState } from "react";
 
-interface CoruselProps {
-  slidesPerView: number
-}
 
-export function Carousel({ slidesPerView }: CoruselProps) {
+export function Carousel() {
+
+  const [slidesPerView, setSlidesPerView] = useState<number>(3);
+
+  const updateSlidesPerView = () => {
+    const screenWidth = window.innerWidth;
+   
+    let slidesToShow = 3;
+    if (screenWidth <= 478) {
+      slidesToShow = 1;
+    } else if (screenWidth <= 768) {
+      slidesToShow = 2;
+    } else {
+      slidesToShow = 3;
+    }
+    setSlidesPerView(slidesToShow);
+  };
+
+  useEffect(() => {
+    updateSlidesPerView();
+    window.addEventListener('resize', updateSlidesPerView);
+    return () => {
+      window.removeEventListener('resize', updateSlidesPerView);
+    };
+  }, []);
+
   return (
     <Container
       modules={[Pagination]}
